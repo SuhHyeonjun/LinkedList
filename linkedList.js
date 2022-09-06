@@ -175,11 +175,26 @@ class LinkedList {
     }
 
      /* 사이즈 확인 */
-     sizeList()
-     {
+     sizeList() {
          console.log("Size of LinkedList is : " + this.size);
      }
+
+     /* 중복 요소 제거 */
+     overlapRemove() {
+        let cur = this.head;
  
+        // 현재 노드와 다음 노드를 비교
+        while (cur.next != null) {
+            if (cur.data == cur.next.data)
+            {
+                cur.next = cur.next.next;
+            }
+            else {
+                cur = cur.next;   
+            }
+        }
+        this.print()
+    }
 
      /* 목록 형식으로 데이터 출력. */
     print() {
@@ -215,4 +230,4 @@ ll.tailInsert(2);
 ll.tailInsert(7);
 ll.print();
 ll.ascendingSort();
-ll.searchDataToChange(3, 22);
+ll.overlapRemove();
