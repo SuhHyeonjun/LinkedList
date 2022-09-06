@@ -16,8 +16,10 @@
 |ascendingSor|함수|오름차순으로 데이터 정렬|
 |changeToNextNode|함수|값을 바꿔 주는 함수 ascendingSort 와 연결|
 |sizeList|함수|사이즈 확인|
+|overlapRemove|함수|중복요소 제거|
 |print|함수|목록 형식으로 데이터 출력|
 |randomNumbers|함수|정렬되지 않은 1~ 100 정수 내에서 랜덤한 10개의 데이터를 삽입|
+
 
 
 
