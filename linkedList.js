@@ -194,6 +194,8 @@ class LinkedList {
             if (cur.data == cur.next.data)
             {
                 cur.next = cur.next.next;
+                this.size--;
+
             }
             else {
                 cur = cur.next;   
