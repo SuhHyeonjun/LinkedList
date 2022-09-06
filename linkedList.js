@@ -147,6 +147,9 @@ class LinkedList {
 
     /* 오름차순으로 데이터 정렬 */
     ascendingSort() {
+        console.log("-----------------------")
+        console.log("오름차순 데이터 정렬")
+        console.log("-----------------------")
         var countNode = this.head.next;
         var count = 0
         while (countNode !== null) {
@@ -181,6 +184,9 @@ class LinkedList {
 
      /* 중복 요소 제거 */
      overlapRemove() {
+        console.log("-----------------------")
+        console.log("중복 요소 제거")
+        console.log("-----------------------")
         let cur = this.head;
  
         // 현재 노드와 다음 노드를 비교
@@ -205,11 +211,14 @@ class LinkedList {
             console.log(`${current.data}`);
             current = current.next;
         }
-        console.log("LinkedList End")
+        ll.sizeList();
     };
 
     /* 정렬되지 않은 1~ 100 정수 내에서 랜덤한 10개의 데이터를 삽입 */
     randomNumbers() {
+        console.log("-----------------------")
+        console.log("랜덤한 10개 정수 생성")
+        console.log("-----------------------")
         for (var i = 0; i < 10; i++) {
             this.tailInsert(Math.floor(Math.random() * 100 + 1));
         }
@@ -218,16 +227,7 @@ class LinkedList {
 
 
 const ll = new LinkedList();
-// ll.randomNumbers()
-// ll.print();
-// ll.ascendingSort();
-
-ll.tailInsert(5);
-ll.tailInsert(1);
-ll.tailInsert(5);
-ll.tailInsert(3);
-ll.tailInsert(2);
-ll.tailInsert(7);
+ll.randomNumbers()
 ll.print();
 ll.ascendingSort();
 ll.overlapRemove();
