@@ -129,53 +129,6 @@ class LinkedList {
         console.log("Size of LinkedList is : " + this.size);
     }
 
-    /* 데이터 정렬 */
-    // ascendingSort() {
-    //     let countNode = this.head.next;
-    //     let currentNode = this.head.next;
-    //     let count = 0
-    //     while (countNode !== null) {
-    //       countNode = countNode.next
-    //       count++
-    //     }
-    //     while (count) {
-    //       while (currentNode.next !== null) {
-    //         if (currentNode.next.value < currentNode.value) {
-    //           this.changeToNextNode(currentNode.next, currentNode);
-    //         }
-    //         currentNode = currentNode.next
-    //       }
-    //       currentNode = this.head.next
-    //       count--
-    //     }
-    //   };
-
-    //   changeToNextNode(next, current) {
-    //     let temp = next.value
-    //     next.value = current.value
-    //     current.value = temp
-    // };
-    
-    // naiveSort(linkedList) {
-    //     var sortedList = [];
-    //     var index = 0;
-    //     var previousItemId = null; // first item in list has null previous ID
-     
-    //     while (sortedList.length < linkedList.length) {
-    //         var current = linkedList[index];
-    //         if (current.previous_item_id === previousItemId) {
-    //             // found the item referencing the previous item's ID
-    //             previousItemId = current.item_id;
-    //             sortedList.push(current); // append to sorted list
-    //             index = 0; // start over at first element
-    //         } else {
-    //             index += 1; // check the next item
-    //         }
-    //     }
-     
-    //     return sortedList;
-    // }
-
 
     /* 중복 요소 제거 */
     removeDups() {
